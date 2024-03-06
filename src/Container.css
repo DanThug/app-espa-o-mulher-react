@@ -1,0 +1,251 @@
+.app-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 100vh;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    z-index: -1;
+}
+
+button {
+    cursor: pointer;
+}
+
+.app-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: aliceblue;
+    font-size: 40px;
+    padding: 5px 0;
+}
+
+.app-nav {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+    color: aliceblue;
+    background-color: indigo;
+    width: 100%;
+    padding: 20px 0;
+}
+
+.app-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;  
+    gap: 5px;
+}
+
+.app-nav select {
+    background-color: mediumslateblue;
+    padding: 8px 15px;
+    border-radius: 7px;
+    color: aliceblue;
+    border: none;
+}
+
+.app-nav input {
+    background-color: mediumslateblue;
+    padding: 8px 15px;
+    border-radius: 7px;
+    color: aliceblue;
+    border: none;
+}
+
+.app-nav input::placeholder {
+    color: aliceblue;
+}
+
+.app-nav button {
+    background-color: rgb(230, 72, 151);
+    color: aliceblue;
+    padding: 8px 15px;
+    border-radius: 7px;
+    border: none;
+}
+
+.app-nav button:hover {
+    background-color: rgb(205, 52, 128);
+}
+
+.app-main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    color: aliceblue;
+    background-color: rgb(217, 212, 249);
+    width: 100%;
+    height: 100%;
+}
+
+.app-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.app-main section ul {
+    list-style: none;
+}
+
+.app-main select {
+    background-color: mediumslateblue;
+    padding: 8px 15px;
+    border-radius: 7px;
+    color: aliceblue;
+    border: none;
+}
+
+.app-main button {
+    background-color: coral;
+    color: aliceblue;
+    padding: 8px 15px;
+    border-radius: 7px;
+    border: none;
+}
+
+.app-section {
+    max-width: 60%;
+    margin: 25px 0;
+    gap: 7px;
+}
+
+.empty {
+    max-width: 300px;
+}
+
+.items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 7px;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    background-color: aliceblue;
+    color: blueviolet;
+    font-weight: 700;
+    border: solid 1px blueviolet;
+    border-radius: 7px;
+    padding: 10px;
+    -webkit-box-shadow: 3px 5px 5px 0px rgba(154,86,232,1);
+    -moz-box-shadow: 3px 5px 5px 0px rgba(154,86,232,1);
+    box-shadow: 3px 5px 5px 0px rgba(154,86,232,1);
+}
+
+.item input {
+    width: 20px;
+    height: 25px;
+}
+
+.item span {
+    margin: 0 15px;
+}
+
+.item button {
+    background-color: indianred;
+}
+
+.item button:hover {
+    background-color: rgb(167, 56, 56);
+}
+
+.done {
+    background-color: rgb(131, 241, 221);
+}
+
+.hide {
+    display: none;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: aliceblue;
+    background-color: indigo;
+    width: 100%;
+    padding: 40px 0;
+}
+
+@media (max-width: 570px) {
+    .app-header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .logo img {
+        padding-top: 10px;
+        max-width: 6rem;
+    }
+
+    .title h2 {
+        font-size: 3rem;
+    }
+
+    .app-form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .app-form span, select, input, button {
+        font-size: 1.4rem;
+    }
+
+    .app-form input::placeholder {
+        text-align: center;
+    }
+
+    .empty {
+        max-width: 10rem;
+    }
+
+    .app-main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .app-section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    footer span {
+        font-size: 1.4rem;
+    }
+}
+
+@media (max-width: 330px) {
+    .logo img {
+        padding-top: 10px;
+        max-width: 4rem;
+    }
+
+    .title h2 {
+        font-size: 2rem;
+    }
+
+    .app-form span, select, input, button {
+        font-size: 1rem;
+    }
+}
