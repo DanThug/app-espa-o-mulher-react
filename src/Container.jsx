@@ -4,7 +4,7 @@ import './Container.css'
 const Header = () => (
     <header className="app-header">
         <div className="logo">
-            <img src="../assets/logo-espaco-mulher.png" alt="logo-espaco-mulher" />
+            <img src="logo-espaco-mulher.png" alt="logo-espaco-mulher" />
             </div>
         <div className="title">
             <h2>Espaço Mulher</h2>
@@ -104,7 +104,7 @@ const Items = ({ storage, setStorage }) => {
                                 </div>
                                 ))
                             )
-                        : <img className="empty" src="../assets/empty.png" />
+                        : <img className="empty" src="empty.png" />
                     }
                 </div>
             </section>
