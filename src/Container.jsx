@@ -39,7 +39,7 @@ const Form = ({ setModal, setInputValue, storage, setStorage }) => {
             }
     
             addItem(obj)
-            name.value = ""
+            e.target.reset()
             name.focus()
         }
 
